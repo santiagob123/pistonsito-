@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Perfil</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Mi perfil</h1>
+        <div class="card mx-auto" style="max-width: 400px;">
+            <div class="card-body text-center">
+                <!-- Foto de perfil -->
+                <div class="profile-pic">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4645/4645949.png" alt="Foto de Perfil" class="rounded-circle mb-3" id="profileImg" width="120" height="120">
+                    <input type="file" id="upload" class="d-none" accept="image/*">
+                </div>
+
+                <!-- Formulario de perfil -->
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="username">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="username" value="PatitoJuan" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="realname">Nombre</label>
+                        <input type="text" class="form-control" id="realname" value="Juan" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Apellidos</label>
+                        <input type="text" class="form-control" id="lastname" value="Patito" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" value="Patito.Juan@Patitos.com" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Sobre mi</label>
+                        <textarea class="form-control" id="bio" rows="3" readonly>Soy el patito Juan, el que encontraste, en la esquina de San Juan.</textarea>
+                    </div>
+                    <!-- Botones -->
+            <button type="button" class="btn custom-edit-button btn-block mb-2" id="editButton">Editar Datos</button>
+            <button type="button" class="btn custom-save-button btn-block mb-2 d-none" id="saveButton">Guardar Cambios</button>
+            <button type="button" class="btn custom-change-password-button btn-block mb-2" id="changePasswordButton">Cambiar
+                Contraseña</button>
+            <a href="Index.php" class="btn custom-logout-button btn-block" id="logoutButton">Cerrar Sesión</a>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/G-Perfil.js"></script>
+
+</body>
+
+</html>

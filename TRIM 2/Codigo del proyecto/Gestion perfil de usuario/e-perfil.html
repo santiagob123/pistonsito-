@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Editar Perfil</h1>
+        <div class="profile-pic">
+            <label for="upload">
+                <img src="https://i.pinimg.com/236x/13/71/c1/1371c163a3d785d5bb4bfd3e8c78b2fb.jpg" alt="Foto de Perfil" id="profileImg">
+            </label>
+            <input type="file" id="upload" accept="image/*">
+        </div>
+
+        <!-- Formulario editable -->
+        <form class="profile-form" action="profile-saved.html" method="post">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" name="username" value="PatitoJuan">
+
+            <label for="realname">Nombre</label>
+            <input type="text" id="realname" name="realname" value="Juan">
+
+            <label for="lastname">Apellidos</label>
+            <input type="text" id="lastname" name="lastname" value="Patito">
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" value="Patitio.Juan@patitos.com">
+
+            <label for="my">Sobre mi</label>
+            <textarea id="my" name="my" rows="4">Soy el patito Juan, el que encontraste en la esquina de san Juan</textarea>
+
+            <button type="submit" class="save-button">Guardar Cambios</button>
+            <button type="submit" formaction="change-password.html" class="change-password-button">Cambiar Contraseña</button>
+        </form>
+
+        <form action="logout-success.html" method="post">
+            <button type="submit" class="logout-button">Cerrar Sesión</button>
+        </form>
+    </div>
+</body>
+</html>

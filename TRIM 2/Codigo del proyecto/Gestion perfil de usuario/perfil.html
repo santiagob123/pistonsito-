@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de usuario</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Mi perfil</h1>
+        <div class="profile-pic">
+            <label for="upload">
+                <img src="https://i.pinimg.com/236x/13/71/c1/1371c163a3d785d5bb4bfd3e8c78b2fb.jpg" alt="Foto de Perfil" id="profileImg">
+            </label>
+            <input type="file" id="upload" accept="image/*" disabled>
+        </div>
+
+        <!-- Formulario de solo lectura -->
+        <form class="profile-form readonly-form">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" name="username" value="PatitoJuan" readonly>
+
+            <label for="realname">Nombre</label>
+            <input type="text" id="realname" name="realname" value="Juan" readonly>
+
+            <label for="lastname">Apellidos</label>
+            <input type="text" id="lastname" name="lastname" value="Patito" readonly>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" value="Patitio.Juan@patitos.com" readonly>
+
+            <label for="my">Sobre mi</label>
+            <textarea id="my" name="my" rows="4" readonly>Soy el patito Juan, el que encontraste en la esquina de san Juan</textarea>
+
+            <button type="submit" formaction="e-perfil.html" class="edit-button">Editar Datos</button>
+            <button type="submit" formaction="change-password.html" class="change-password-button">Cambiar Contraseña</button>
+        </form>
+
+        <form action="logout-success.html" method="post">
+            <button type="submit" class="logout-button">Cerrar Sesión</button>
+        </form>
+    </div>
+</body>
+</html>

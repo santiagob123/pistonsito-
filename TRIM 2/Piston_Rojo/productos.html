@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Piston Rojo</title>
+    <link rel="stylesheet" href="css/estilosjv.css">
+    <link rel="icon" type="image/png" href="imagenes/Logo.png">
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Piston Rojo</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">
+                    <a href="inicio.html">
+                        <img class="dv" src="imagenes/Logo.png" alt="Piston Rojo Logo">
+                    </a>
+                    Piston Rojo
+                </h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="indexjv.html" class="boton-menu boton-categoria "><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    </li>
+                    <li>
+                        <a href="productos.html" class="boton-menu boton-categoria active"><i class="bi bi-list-ul"></i> Productos</a>
+                    </li>
+                    <li>
+                        <a href="citas.html" class="boton-menu boton-categoria"><i class="bi bi-person-fill"></i> Citas</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024 Piston Rojo</p>
+            </footer>
+        </aside>
+        <main>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-m">Productos</h3>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-agregar-producto" id="agregar-cita">Agregar</button>
+                </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="buscar" placeholder="Buscar...">
+                            <button class="btn btn-outline-secondary" type="button" id="buscar-producto">Buscar</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-end">
+                            <a href="inicio.html" class="btn btn-danger btn-cerrar-sesion" id="cerrar-sesion">
+                              <i class="bi bi-box-arrow-right"></i>
+                            </a>
+                          </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <table class="table table-striped" id="tabla-productos">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Imagen</th>
+                                    <th>Stock</th>
+                                    <th>Precio</th>
+                                    <th>Fecha de creación</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+6ASrWtvAz+uJ+MdHZLlZ19zG4eYyNlCpXpM+g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+    <script src="js/productos.js"></script>
+</body>
+</html>

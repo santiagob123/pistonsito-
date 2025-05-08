@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilosjv.css">
+    <title>Gestión de Citas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="inicio.html">
+                    <img src="imagenes/Logo.png" alt="Cursos Informatica" class="d-inline-block align-text-top"
+                        style="max-height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="GestionUsuario.html">Perfil</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="inicio_de_sesion.html">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <h1>Tus Citas</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Descripción</th>
+                    <th>Tipo de Servicio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="appointmentTableBody">
+                <!-- Aquí se mostrará la información de las citas -->
+            </tbody>
+        </table>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">Crear Nueva Cita</button>
+    </div>
+
+    <!-- Modal para Crear o Editar Cita -->
+    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createModalLabel">Crear Nueva Cita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <input type="hidden" id="appointmentId">
+                        <div class="form-group mb-3">
+                            <label for="appointmentName">Nombre</label>
+                            <input type="text" class="form-control" id="appointmentName" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="appointmentDate">Fecha</label>
+                            <input type="date" class="form-control" id="appointmentDate" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="appointmentTime">Hora</label>
+                            <input type="time" class="form-control" id="appointmentTime" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="appointmentDescription">Descripción</label>
+                            <textarea class="form-control" id="appointmentDescription" rows="3"
+                                placeholder="Descripción"></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="inputService" class="form-label">Servicio</label>
+                            <select id="inputService" class="form-select" required>
+                                <option value="" disabled selected>Seleccione un servicio...</option>
+                                <option value="revision">Revisión</option>
+                                <option value="mantenimiento">Mantenimiento</option>
+                                <option value="revision-mantenimiento">Revisión y Mantenimiento</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="saveAppointmentBtn">Guardar Cita</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/C-Citas.js"></script>
+</body>
+
+</html>
