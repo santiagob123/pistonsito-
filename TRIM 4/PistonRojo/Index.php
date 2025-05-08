@@ -288,7 +288,7 @@
             </a>
             <a href="https://www.whatsapp.com/" target="_blank">
                 <img src="imagenes/whatsap.jpg" alt="Instagram">
-            </a>
+            </a> 
 
         </div>
     </div>
