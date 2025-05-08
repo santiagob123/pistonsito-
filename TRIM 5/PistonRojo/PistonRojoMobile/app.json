@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "PistonRojoMobile",
+    "slug": "PistonRojoMobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/imagenes/Logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/imagenes/Logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/imagenes/Logo.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/imagenes/Logo.png"
+    }
+  }
+}
