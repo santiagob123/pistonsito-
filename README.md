@@ -1,4 +1,4 @@
-# PISTON ROJO-
+# PISTON ROJO
 
 ---
 <p align="center">
