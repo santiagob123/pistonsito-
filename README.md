@@ -7,7 +7,7 @@
 
 ## Problemática
 
-Después de hablar con el gerente de "El Pistón Rojo", identificamos desafíos clave. El desorden en el inventario de repuestos, gestionado en un cuaderno desorganizado, dificulta las reparaciones rápidas. Además, la falta de control en las citas causa congestión en el taller, obligando a los clientes a regresar al día siguiente por falta de espacio. Estos problemas afectan las ventas y la satisfacción del cliente, subrayando la necesidad urgente de mejorar la eficiencia operativa.
+Después de hablar con el gerente de "El Pistón Rojo", identificamos desafíos clave. El desorden en el inventario de repuestos, gestionado en un cuaderno desorganizado, dificulta las reparaciones rápidas. Además, la falta de control en las citas causa congestión en el taller, obligando a los clientes a regresar al día siguiente por falta de espacio. Estos problemas afectan las ventas y la satisfacción del cliente, subrayando la necesidad urgente de mejorar la eficiencia operativaxx.
 
 ---
 ## Objetivos
